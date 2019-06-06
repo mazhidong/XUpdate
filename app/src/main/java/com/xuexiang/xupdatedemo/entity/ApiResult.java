@@ -24,43 +24,43 @@ package com.xuexiang.xupdatedemo.entity;
  */
 public class ApiResult<T> {
 
-    private int Code = 0;
-    private String Msg = "";
-    private T Data;
+    private int code = 0;
+    private String msg = "";
+    private T data;
 
     public int getCode() {
-        return Code;
+        return code;
     }
 
     public ApiResult setCode(int code) {
-        Code = code;
+        this.code = code;
         return this;
     }
 
     public String getMsg() {
-        return Msg;
+        return msg;
     }
 
     public ApiResult setMsg(String msg) {
-        Msg = msg;
+        this.msg = msg;
         return this;
     }
 
     public T getData() {
-        return Data;
+        return data;
     }
 
     public ApiResult setData(T data) {
-        Data = data;
+        this.data = data;
         return this;
     }
 
     @Override
     public String toString() {
         return "ApiResult{" +
-                "Code='" + Code + '\'' +
-                ", Msg='" + Msg + '\'' +
-                ", Data=" + Data +
+                "code='" + code + '\'' +
+                ", msg='" + msg + '\'' +
+                ", data=" + data +
                 '}';
     }
 }
